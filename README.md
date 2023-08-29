@@ -35,3 +35,17 @@ elif stu_score>=70 and stu_score<=79:
   print("C")
 else:
   print("D")
+
+  
+#Dictionaries:
+dict1={"name":"Alia","age":20,"address":"banglore"}
+print(dict1)
+#access
+address=dict1["address"]  #banglore
+print(address)
+age=dict1["age"]          #20
+print(age)
+dict1={"name":"alia","age":20}
+new_data={"address":"banglore","gender":"female"}
+dict1.update(new_data)  #merges new_data into my_dict
+print(dict1)
