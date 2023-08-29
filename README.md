@@ -49,3 +49,11 @@ dict1={"name":"alia","age":20}
 new_data={"address":"banglore","gender":"female"}
 dict1.update(new_data)  #merges new_data into my_dict
 print(dict1)
+
+#
+#year=int(input("Enter year:"))
+#if year%4==0 and year%100!=0 or year%400==0:
+  #print("Leap year")
+#else:
+  #print("not leap year")
+
