@@ -102,6 +102,21 @@ while True:
 colors={"color1":"Black","color2":"Red","color3":"Blue","color4":"Green"}
 for i in colors:
   print(i,colors[i])
+
+  #functions
+#def function_name(parameters): 
+  # Code to be executed
+  #....
+def greet(name):
+  print(f"Hello, {name}!")
+greet("Akash")  
+
+#default parameters
+def power(base,expo=3):
+  return base**expo
+print(power(3,6))
+print(power(3))
+
         
         
 
