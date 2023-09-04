@@ -117,6 +117,16 @@ def power(base,expo=3):
 print(power(3,6))
 print(power(3))
 
+#args(to pass different variables into the function)
+def average(*args):
+  return sum(args) / len(args)
+print(average(5,10,15))  
+
+#kwargs(key arguments)
+def person_info(name,age):
+  print(f"Name: {name},Age: {age}")
+person_info(age=25,name="Bob")  
+
         
         
 
