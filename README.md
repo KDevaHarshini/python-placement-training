@@ -59,6 +59,7 @@ print(dict1)
 
 
    #program that takes a password as input and checks if it is strong or weak.a strong password has atleast 8 characters,incudes both upper and lowercase letters,and contain atleast one digit
+   METHOD 1:
 length,u,d=0,0,0
 char=input("Enter Password:")
 if(len(char)>=8):
@@ -72,6 +73,18 @@ if(length>=1 and u>=1 and d>=1):
   print("valid password")
 else:
   print("invaid password")
+
+  METHOD 2:
+  password=input("Enter a password:")
+length=len(password)>=8
+uppercase=any(char.isupper() for char in password)
+lowercase=any(char.islower() for char in password)
+digit=any(char.isdigit() for char in password)
+if length and uppercase and lowercase and digit:
+  print("Strong password")
+else:
+  print("Weak password")
+        
         
 
 
