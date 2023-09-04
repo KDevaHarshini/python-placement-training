@@ -57,3 +57,21 @@ print(dict1)
 #else:
   #print("not leap year")
 
+
+   #program that takes a password as input and checks if it is strong or weak.a strong password has atleast 8 characters,incudes both upper and lowercase letters,and contain atleast one digit
+length,u,d=0,0,0
+char=input("Enter Password:")
+if(len(char)>=8):
+  for i in char:
+    length+=1
+    if(i.isupper()):
+      u+=1
+    if(i.islower()):
+        d+=1
+if(length>=1 and u>=1 and d>=1):
+  print("valid password")
+else:
+  print("invaid password")
+        
+
+
