@@ -97,6 +97,11 @@ while True:
   else:
     print("Congrats")
     break
+
+    #Iterating through dictionaries:
+colors={"color1":"Black","color2":"Red","color3":"Blue","color4":"Green"}
+for i in colors:
+  print(i,colors[i])
         
         
 
