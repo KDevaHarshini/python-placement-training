@@ -84,6 +84,19 @@ if length and uppercase and lowercase and digit:
   print("Strong password")
 else:
   print("Weak password")
+
+  #create a game where the computer generates a random number between 1 and 100 and the player has to guess the number.Provide hints like "too high" or "too low" after each guess.
+import random
+target=random.randint(1,100)
+while True:
+  guess=int(input("Guess the number:"))
+  if guess<target:
+    print("Too low")
+  elif guess>target:
+    print("Too high")
+  else:
+    print("Congrats")
+    break
         
         
 
