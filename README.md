@@ -142,6 +142,27 @@ class Student:
 s=Student()
 #call the method using an object
 s.putdata()
+
+class BankAccount:
+  def __init__(self,name,balance):
+    self.name=name
+    self.balance=balance
+  def deposit(self,amount):
+    if amount > 0:
+      self.balance+=amount
+      print(f"Deposited ${amount}. Newbalance: ${self.balance}")
+    else:
+      print("Invalid amount. Please deposit a positive amount.")
+  def withdraw(self,amount):
+        if amount<=0:
+           print("Invalid amount. Please withdraw a positive amount.")
+        elif amount>self.balance:
+           print("Insufficient balance.")
+        else:
+          self.balance-=amount
+          print(f"Withdrew ${amount}. New balance: ${self.balance}")
+account1=BankAccount("Alice", 1000)
+account1.deposit(500)
         
         
 
