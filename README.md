@@ -126,7 +126,22 @@ print(average(5,10,15))
 def person_info(name,age):
   print(f"Name: {name},Age: {age}")
 person_info(age=25,name="Bob")  
-
+#class Definitiom
+class Student:
+   #Special method called constuctors
+  def __init__(self):
+    self.name="Ram"
+    self.age=21
+    self.marks=75.90
+  #This is an instance method
+  def putdata(self):
+    print("Name:",self.name)
+    print("Age:",self.age)
+    print("Marks:",self.marks)
+#create an instance to the student class
+s=Student()
+#call the method using an object
+s.putdata()
         
         
 
