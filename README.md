@@ -163,6 +163,12 @@ class BankAccount:
           print(f"Withdrew ${amount}. New balance: ${self.balance}")
 account1=BankAccount("Alice", 1000)
 account1.deposit(500)
+
+#Serialization
+import json
+data={"name": "John","age": 30}
+json_string=json.dumps(data)
+print(json_string)
         
         
 
