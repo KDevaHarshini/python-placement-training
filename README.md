@@ -179,7 +179,12 @@ arr2=np.array(['Hello'])
 print(arr1)
 print(type(arr2))
 print(arr2)
-        
+
+
+#write a program where variable takes string values, print starting index=-3and do not specify end index[-3:]
+import numpy as np
+arr=np.array(['a','b','c','d','e','f'])
+print(arr[-3:])        
         
 
 
