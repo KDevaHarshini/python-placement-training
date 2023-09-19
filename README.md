@@ -184,7 +184,41 @@ print(arr2)
 #write a program where variable takes string values, print starting index=-3and do not specify end index[-3:]
 import numpy as np
 arr=np.array(['a','b','c','d','e','f'])
-print(arr[-3:])        
+print(arr[-3:]) 
+
+import numpy as np
+arr=([10,20,30,40,50,60,70])
+print(arr[1]+arr[3])
+print(arr[0])
+print(arr[-1])
+
+#datatypes in numpy
+#i-integer
+#b-boolean
+#u-unsigned integer
+#f-float
+#c-complex float
+#m-timedelta
+#M-datetime
+import numpy as np
+arr=np.array(['hello'])
+print(arr.dtype)
+
+#write a program where it as 2 different variables and 2 different array elements that are assigned.The first variable is copied by using copy function and the second variable has to be vieewed using view function.
+import numpy as np
+arr=np.array(['a','b','c','d','e'])
+a=arr.copy()
+b=arr.view()
+print(a.base)
+print(b.base)
+
+import numpy as np
+arr=np.array([[1,2,3,4],[5,6,7,8]])
+print(arr.shape)
+
+import numpy as np
+arr=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print(arr.reshape(4,3))
         
 
 
