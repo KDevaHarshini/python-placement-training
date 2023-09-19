@@ -169,6 +169,16 @@ import json
 data={"name": "John","age": 30}
 json_string=json.dumps(data)
 print(json_string)
+
+
+#NUMPYs
+#write a program for numpy by taking a variable and assign list of elements of variables to that variable and print those elements.
+import numpy as np
+arr1=np.array([1,2,3,4])
+arr2=np.array(['Hello'])
+print(arr1)
+print(type(arr2))
+print(arr2)
         
         
 
